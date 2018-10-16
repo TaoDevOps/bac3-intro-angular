@@ -1,0 +1,24 @@
+<!-- Start: Header component -->
+<h1>title</h1>
+<hr>
+<!-- End: Header component -->
+
+<!-- Start: List of books component -->
+<div id="search-component">
+    <h4>Search in your library</h4>
+    <input id="search-box" #searchInput input="search()"/>
+</div>
+<!-- End: List of books component -->
+
+<!-- Start: List of books component -->
+<h3>All Books (books.length)</h3>
+<br>
+<hr>
+<div class="grid grid-pad">
+    <a class="col-1-4" ngFor="let book in books">
+    <div class="module hero">
+        <h4>book.title</h4>
+    </div>
+    </a>
+</div>
+<!-- End: List of books component -->
